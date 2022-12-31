@@ -1,0 +1,120 @@
+:root {
+	--text-color-white: #F1F1F1;
+	--text-color-brown: #420000;
+
+	--background-color-blue: #81D1DF;
+	--background-color-gray: #1F1F1F;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: Segoe UI;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--background-color-blue);
+}
+
+.container {
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	font-size: 1.5rem;
+}
+
+section {margin-bottom: 3rem;}
+
+section .container {padding: 0px 5rem;}
+
+.nav {
+	z-index: 2;
+	width: 100%;
+	max-width: 1080px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	position: sticky;
+	top: 0;
+	border-bottom: 1px solid black;
+	background-color: var(--background-color-gray);
+}
+
+.nav a {
+	background-color: var(--background-color-gray);
+	width: 100%;
+	text-align: center;
+	padding: 25px 0px;
+	font-size: 1.1rem;
+	color: var(--text-color-white);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	transition: .3s;
+}
+
+.nav a:hover {box-shadow: inset 0px 4px white;}
+
+.header-text {
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	margin-bottom: 1.5rem;
+	position: sticky;
+	top: 4rem;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 2rem;
+	text-transform: uppercase;
+	background-color: rgb(31, 31, 31);
+	color: var(--text-color-white);
+	padding: 15px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--text-color-brown);
+}
+
+img {
+	border-radius: 50%;
+}
+
+header {
+	height: 25vh;
+	overflow: hidden;
+}
+
+header .container {
+	display: grid;
+	grid-template-rows: 1fr 3fr;
+}
+
+header .contact {
+	color: var(--text-brown-color);
+	text-align: right;
+	padding-right: 5rem;
+	padding-top: 2rem;
+	font-size: 3rem;
+}
+
+header .me {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	position: relative;
+}
+
+header .me a {
+	position: absolute;
+	right: 9rem;
+	top: 10rem;
+	color: var(--text-brown-color);
+	text-decoration: none;
+}
+
+p {margin-top: 1rem;}
+
+span {font-weight: bold;}
