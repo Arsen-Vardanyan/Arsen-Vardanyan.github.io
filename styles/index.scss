@@ -30,6 +30,12 @@ header {
     .header-text {
         color: $text-color-two;
     }
+    .lick-to-cv {
+        a {
+            text-decoration: none;
+            color: red;
+        }
+    }
 }
 
 .massage {

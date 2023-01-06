@@ -79,10 +79,6 @@ a {
 	color: var(--text-color-brown);
 }
 
-img {
-	border-radius: 50%;
-}
-
 header {
 	height: 25vh;
 	overflow: hidden;
@@ -116,5 +112,9 @@ header .me a {
 }
 
 p {margin-top: 1rem;}
+
+section#links .container p:nth-child(7) {padding-top: 7%;}
+
+section#links .container p:nth-child(7) a {color: brown;}
 
 span {font-weight: bold;}
